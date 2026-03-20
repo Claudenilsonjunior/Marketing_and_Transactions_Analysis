@@ -314,3 +314,8 @@ ORDER BY total DESC;
 -- 103127 total transactions
 -- 92678 transactions with product_id
 -- 10449 transactions without product_id
+
+SELECT
+COUNT(*)
+FROM transactions
+WHERE refund_flag = 0 AND product_id IS NOT NULL
