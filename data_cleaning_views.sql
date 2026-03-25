@@ -156,3 +156,26 @@ SELECT
     refund_flag
 FROM Transactions
 WHERE product_id IS NOT NULL;
+
+
+
+
+-- Updating this view to solve a issue with the Power BI Dashboard
+
+ALTER VIEW vw_transactions_clean AS
+SELECT
+    transaction_id,
+    timestamp,
+    customer_id,
+    product_id,
+    quantity,
+    discount_applied,
+    gross_revenue                               AS gross_revenue_raw,
+    CASE
+        WHEN refund_flag = 0 THEN gross_revenue
+        ELSE ABS(gross_revenue)
+    END                                         AS gross_revenue_clean,
+    campaign_id,
+    CAST(refund_flag AS INT)                    AS refund_flag
+FROM Transactions
+WHERE product_id IS NOT NULL;
