@@ -479,8 +479,9 @@
 <p align="center">A seven-page Power BI dashboard was built to give Nuvra's leadership team a live view of every finding in this report.</p>
 
 <div align="center">
-  <img width="1000" alt="Executive Overview Dashboard" src="https://github.com/user-attachments/assets/7ce79887-8423-4b04-9134-13828131913f" />
+  <img width="799" height="659" alt="Executive Overview Dashboard" src="https://github.com/user-attachments/assets/bc1e9a50-4c5d-400a-82c6-11ea299207e3" />
 </div>
+
 
 
 <table align="center">
