@@ -22,7 +22,6 @@
       <p>
         But behind the headline numbers, the leadership team was facing a problem they could not fully articulate — and that was exactly the issue.
       </p>
-
       <h2 align="center">The Problem</h2>
       <p>
         Heading into 2023, Nuvra's Chief Commercial Officer brought a concern to the board: <strong>the business had been generating strong revenue for two years, but growth had flatlined</strong>. Month after month, the numbers looked similar. Marketing spend was increasing. The customer acquisition engine was running at full capacity. But net revenue per customer was not moving, repeat purchase rates were unclear, and no one could point to a single cohort of customers that was behaving better than any other.
@@ -38,13 +37,11 @@
       <p>
         An internal analytics review was commissioned, covering three full years of data (2021–2023) across the company's five core data systems: customer profiles, product catalog, marketing campaigns, user interaction events, and purchase transactions.
       </p>
-
       <h2 align="center">The North Star</h2>
       <blockquote>
         <strong>Net Revenue per Active Customer: $13,103</strong><br>
         The analysis established this as the single metric that every strategic decision should aim to move — combining revenue quality (excluding refunds) with genuine customer engagement (only counting customers who actually purchased).
       </blockquote>
-
       <h3>The review covered six areas</h3>
       <ul>
         <li><strong>Revenue & Profitability</strong> — Total revenue, refund impact, discount behavior, and month-over-month growth trends.</li>
