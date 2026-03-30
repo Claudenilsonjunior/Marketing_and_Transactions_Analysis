@@ -405,7 +405,6 @@
     <td width="1440">
       <h1 align="center">Recommendations</h1>
       <h4>The analysis gave Nuvra's leadership team a clear answer to each of their three questions — and a concrete set of actions to move forward.</h4>
-
       <h3>On retention — yes, you are replacing the customers you lose</h3>
       <ul>
         <li>
@@ -428,7 +427,6 @@
           </ul>
         </li>
       </ul>
-
       <h3>On campaigns — reallocate before you scale</h3>
       <ul>
         <li>
@@ -450,7 +448,6 @@
           </ul>
         </li>
       </ul>
-
       <h3>On product — concentrate where the return is clearest</h3>
       <ul>
         <li>
@@ -546,9 +543,3 @@
     <td>Version control and project documentation</td>
   </tr>
 </table>
-
----
-
-<div align="center">
-  <p><em>Nuvra Commerce is a fictional company created for portfolio purposes. All data is synthetic and does not represent any real business or individuals.</em></p>
-</div>
