@@ -117,3 +117,30 @@ SELECT
          THEN 1 ELSE 0 END                          AS never_purchased
 FROM vw_customers_clean c
 LEFT JOIN purchases p ON c.customer_id = p.customer_id;
+
+
+-- Median days to 2nd purchase metric
+CREATE VIEW vw_days_to_second_purchase AS
+WITH purchase_sequence AS (
+    SELECT
+        customer_id,
+        timestamp,
+        ROW_NUMBER() OVER (PARTITION BY customer_id ORDER BY timestamp) AS purchase_rank
+    FROM vw_transactions_clean
+    WHERE refund_flag = 0
+),
+first_second AS (
+    SELECT
+        p1.customer_id,
+        DATEDIFF(DAY, p1.timestamp, p2.timestamp) AS days_to_second_purchase
+    FROM purchase_sequence p1
+    JOIN purchase_sequence p2
+        ON p1.customer_id = p2.customer_id
+        AND p1.purchase_rank = 1
+        AND p2.purchase_rank = 2
+)
+SELECT
+    days_to_second_purchase,
+    COUNT(*) AS total_customers
+FROM first_second
+GROUP BY days_to_second_purchase;
